@@ -11,6 +11,7 @@ import {
   Sparkles,
   Phone,
   Users,
+  CreativeCommons,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
@@ -208,7 +209,7 @@ export default function Home() {
               <AccentButton>À propos de nous</AccentButton>
               <div className="flex items-center gap-3">
                 <span className="grid size-12 place-items-center rounded-full bg-[#f7d5dc] text-[#d7263d]">
-                  <Sparkles className="size-4" />
+                  <CreativeCommons className="size-4" />
                 </span>
                 <span className="text-sm">
                   <b className="block">Créativité utile</b>
@@ -245,7 +246,7 @@ export default function Home() {
               [Megaphone, "Stratégie de communication", "Un cap clair, un message fort et une identité qui vous ressemble."],
               [Globe2, "Présence digitale", "Des contenus pensés pour toucher les publics congolais et africains."],
               [ShieldCheck, "Réputation de marque", "Une image crédible qui inspire confiance à vos clients et partenaires."],
-              [Sparkles, "Créativité utile", "Des idées originales au service de vos objectifs business."],
+              [CreativeCommons, "Créativité utile", "Des idées originales au service de vos objectifs business."],
             ].map(([Icon, title, text]) => {
               const ServiceIcon = Icon as typeof Megaphone;
               return (
