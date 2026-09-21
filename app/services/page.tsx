@@ -11,7 +11,7 @@ const services = [
     icon: Megaphone,
     title: "Conseil en communication",
     text: "Nous élaborons votre stratégie de communication de A à Z : positionnement, messages clés, plan d'action et identité de marque cohérente.",
-    image: "photo-1542744173-8e7e53415bb0",
+    image: "/images/mission.jpg",
     color: "bg-[#571426]",
     textColor: "text-white",
   },
@@ -19,7 +19,7 @@ const services = [
     icon: Palette,
     title: "Branding & Identité visuelle",
     text: "Conception de logos, chartes graphiques et univers visuels qui reflètent authentiquement votre organisation et inspirent confiance.",
-    image: "photo-1561070791-2526d30994b5",
+    image: "/images/services-why.jpg",
     color: "bg-[#ffb3bd]",
     textColor: "text-[#38131b]",
   },
@@ -27,7 +27,7 @@ const services = [
     icon: Radio,
     title: "Relations publiques",
     text: "Gestion de votre réputation, relations médias, organisation d'événements et communication de crise pour protéger votre image.",
-    image: "photo-1556761175-b413da4baf72",
+    image: "/images/about-hero.jpg",
     color: "bg-white",
     textColor: "text-[#38131b]",
   },
@@ -35,7 +35,7 @@ const services = [
     icon: Film,
     title: "Production audiovisuelle",
     text: "Films d'entreprise, spots publicitaires, reportages photo et contenus vidéo de haute qualité pour valoriser votre marque.",
-    image: "photo-1574717024653-61fd2cf4d44d",
+    image: "/images/hero.jpg",
     color: "bg-[#fff1f2]",
     textColor: "text-[#38131b]",
   },
@@ -43,7 +43,7 @@ const services = [
     icon: Globe2,
     title: "Communication digitale",
     text: "Stratégie réseaux sociaux, création de contenu, community management et présence en ligne adaptés aux publics congolais et africains.",
-    image: "photo-1611162617474-5b21e879e113",
+    image: "/images/about-portrait-woman.jpg",
     color: "bg-[#571426]",
     textColor: "text-white",
   },
@@ -51,7 +51,7 @@ const services = [
     icon: GraduationCap,
     title: "Formation & Coaching",
     text: "Ateliers sur mesure, coaching d'équipes et programmes de renforcement des capacités pour professionnaliser votre communication.",
-    image: "photo-1552664730-d307ca884978",
+    image: "/images/about-portrait-man.jpg",
     color: "bg-[#ffb3bd]",
     textColor: "text-[#38131b]",
   },
@@ -73,7 +73,7 @@ export default function ServicesPage() {
           className="relative flex min-h-[300px] items-center justify-center overflow-hidden rounded-2xl bg-[#571426] bg-cover bg-center text-center text-white"
           style={{
             backgroundImage:
-              "linear-gradient(90deg, rgba(87,20,38,.97) 0%, rgba(87,20,38,.60) 60%), url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1800&q=85')",
+              "linear-gradient(90deg, rgba(87,20,38,.97) 0%, rgba(87,20,38,.60) 60%), url('/images/about-hero.jpg')",
           }}
         >
           <motion.div
@@ -158,7 +158,7 @@ export default function ServicesPage() {
             className="mt-7 h-64 rounded-xl bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1000&q=85')",
+                "url('/images/services-why.jpg')",
             }}
           />
         </motion.div>
@@ -236,7 +236,7 @@ export default function ServicesPage() {
                 <div
                   className="mb-5 h-28 w-full rounded-xl bg-cover bg-center opacity-80 group-hover:opacity-100 transition-opacity"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(87,20,38,.25),rgba(87,20,38,.25)),url('https://images.unsplash.com/${image}?auto=format&fit=crop&w=700&q=80')`,
+                    backgroundImage: `linear-gradient(rgba(87,20,38,.25),rgba(87,20,38,.25)),url('${image}')`,
                   }}
                 />
                 <span className="mb-3 inline-grid size-10 place-items-center rounded-full bg-white/20">

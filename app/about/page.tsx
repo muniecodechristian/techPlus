@@ -44,7 +44,7 @@ export default function AboutPage() {
           className="relative flex min-h-[330px] items-center overflow-hidden rounded-2xl bg-[#571426] bg-cover bg-center px-8 text-white sm:px-16"
           style={{
             backgroundImage:
-              "linear-gradient(90deg, rgba(87,20,38,.98), rgba(87,20,38,.48)), url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1800&q=85')",
+              "linear-gradient(90deg, rgba(87,20,38,.98), rgba(87,20,38,.48)), url('/images/about-hero.jpg')",
           }}
         >
           <motion.div
@@ -112,7 +112,7 @@ export default function AboutPage() {
           className="min-h-[430px] rounded-2xl bg-cover bg-center"
           style={{
             backgroundImage:
-              "linear-gradient(180deg, rgba(87,20,38,.05), rgba(87,20,38,.35)), url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=85')",
+              "linear-gradient(180deg, rgba(87,20,38,.05), rgba(87,20,38,.35)), url('/images/mission.jpg')",
           }}
         />
         <motion.div

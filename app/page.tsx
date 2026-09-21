@@ -6,7 +6,7 @@ import {
   Megaphone,
   Globe2,
   ShieldCheck,
-  Sparkles,
+  Palette,
   Phone,
   CreativeCommons,
 } from "lucide-react";
@@ -56,7 +56,7 @@ const services = [
     style: "bg-white text-[#38131b]",
   },
   {
-    icon: Sparkles,
+    icon: Palette,
     title: "Branding &\nIdentité visuelle",
     text: "Conception de logos, chartes graphiques et univers visuels qui reflètent authentiquement votre organisation et inspirent confiance.",
     style: "bg-[#ffb3bd] text-[#571426]",
@@ -104,7 +104,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center opacity-90"
           style={{
             backgroundImage:
-              "linear-gradient(90deg, rgba(87,20,38,.98) 0%, rgba(87,20,38,.88) 39%, rgba(87,20,38,.15) 75%), url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1800&q=85')",
+              "linear-gradient(90deg, rgba(87,20,38,.98) 0%, rgba(87,20,38,.88) 39%, rgba(87,20,38,.15) 75%), url('/images/hero.jpg')",
           }}
         />
         <div className="relative z-10 mx-auto flex max-w-7xl items-center px-6 pb-28 pt-24">
@@ -185,7 +185,7 @@ export default function Home() {
       <section id="about" className="bg-white px-6 py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <motion.div initial={{ opacity: 0, x: -35 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: .25 }} transition={{ duration: .7 }} className="space-y-4">
-            <motion.div whileHover={{ scale: 1.02 }} className="overflow-hidden rounded-[28px] bg-cover bg-center shadow-[0_30px_80px_rgba(87,20,38,0.12)]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1000&q=85')", height: "430px" }} />
+            <motion.div whileHover={{ scale: 1.02 }} className="overflow-hidden rounded-[28px] bg-cover bg-center shadow-[0_30px_80px_rgba(87,20,38,0.12)]" style={{ backgroundImage: "url('/images/about-portrait-woman.jpg')", height: "430px" }} />
             <div className="grid grid-cols-[1fr_1.2fr] gap-4">
               <div className="grid place-items-center rounded-[24px] bg-[#f7d5dc] p-6 text-[#38131b]">
                 <div className="flex items-center justify-center rounded-full border border-[#38131b]/15 bg-white/40 p-3 text-xl">
@@ -194,7 +194,7 @@ export default function Home() {
                 <div className="mt-4 text-4xl font-semibold">10K+</div>
                 <div className="text-[10px] uppercase tracking-[0.18em]">Completed works</div>
               </div>
-              <div className="overflow-hidden rounded-[24px] bg-cover bg-center shadow-[0_20px_60px_rgba(87,20,38,0.08)]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=85')", minHeight: "180px" }} />
+              <div className="overflow-hidden rounded-[24px] bg-cover bg-center shadow-[0_20px_60px_rgba(87,20,38,0.08)]" style={{ backgroundImage: "url('/images/about-portrait-man.jpg')", minHeight: "180px" }} />
             </div>
           </motion.div>
 
