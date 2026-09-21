@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const partners = [
-  { id: 1, src: "/partners/1.jpg", alt: "Partenaire 1" },
-  { id: 2, src: "/partners/2.jpg", alt: "Partenaire 2" },
-  { id: 3, src: "/partners/3.jpg", alt: "Partenaire 3" },
-  { id: 4, src: "/partners/4.jpg", alt: "Partenaire 4" },
+  { id: 1, src: "/images/IMG-20260911-WA0015.jpg", alt: "Partenaire 1" },
+  { id: 2, src: "/images/IMG-20260911-WA0016.jpg", alt: "Partenaire 2" },
+  { id: 3, src: "/images/IMG-20260911-WA0017.jpg", alt: "Partenaire 3" },
+  { id: 4, src: "/images/IMG-20260911-WA0018%20-%20Copie.jpg", alt: "Partenaire 4" },
+  { id: 5, src: "/images/IMG-20260911-WA0019.jpg", alt: "Partenaire 5" },
 ];
 
 export function PartnersMarquee() {
@@ -22,39 +23,40 @@ export function PartnersMarquee() {
         </h2>
       </div>
 
-      <div className="relative flex w-full flex-col justify-center overflow-hidden bg-white">
-        <div className="absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
-        <div className="absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+      <div className="relative flex w-full justify-center overflow-hidden bg-white">
+        {/* Gradient fade gauche */}
+        <div className="absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-white to-transparent pointer-events-none" />
+        {/* Gradient fade droite */}
+        <div className="absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-white to-transparent pointer-events-none" />
 
         <motion.div
-          className="flex w-max items-center gap-12 sm:gap-20"
+          className="flex w-max items-center gap-8 sm:gap-12"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
-            duration: 25,
+            duration: 30,
             ease: "linear",
             repeat: Infinity,
           }}
         >
-          {/* We duplicate the array to create a seamless infinite scroll effect */}
-          {[...partners, ...partners, ...partners, ...partners].map((partner, index) => (
+          {/* Duplication ×2 pour défilement infini sans saut */}
+          {[...partners, ...partners].map((partner, index) => (
             <div
               key={`${partner.id}-${index}`}
-              className="group flex items-center justify-center grayscale transition-all duration-300 hover:grayscale-0"
+              className="group shrink-0"
             >
-              <div className="relative h-20 w-32 sm:h-24 sm:w-40 flex items-center justify-center bg-gray-50/50 rounded-xl border border-gray-100 overflow-hidden p-4">
-                <span className="absolute text-[10px] text-gray-400 font-bold opacity-50 group-hover:opacity-0 transition-opacity">
-                  {partner.alt}
-                </span>
+              <div className="relative h-24 w-36 sm:h-28 sm:w-44 overflow-hidden rounded-2xl border border-[#571426]/10 bg-[#fff7f7] shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:border-[#d7263d]/25 group-hover:scale-105">
                 <Image
                   src={partner.src}
                   alt={partner.alt}
                   fill
-                  sizes="(max-width: 768px) 128px, 160px"
-                  className="object-contain p-2 z-10 opacity-80 group-hover:opacity-100 transition-opacity bg-white"
+                  sizes="(max-width: 768px) 144px, 176px"
+                  className="object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100"
                   onError={(e) => {
-                    e.currentTarget.style.opacity = "0";
+                    e.currentTarget.style.display = "none";
                   }}
                 />
+                {/* Overlay subtil au hover */}
+                <div className="absolute inset-0 rounded-2xl ring-2 ring-[#d7263d]/0 group-hover:ring-[#d7263d]/20 transition-all duration-300" />
               </div>
             </div>
           ))}
