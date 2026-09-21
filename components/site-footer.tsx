@@ -12,7 +12,7 @@ export function SiteFooter() {
             Parlons de votre projet
           </p>
           <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-semibold tracking-tight sm:text-5xl">
-            Donnons à votre communication une histoire qui compte.
+            Transformer votre idée en une marque qui fait de l&apos;impact.
           </h2>
         </div>
 
@@ -31,8 +31,8 @@ export function SiteFooter() {
               />
             </Link>
             <p className="mt-5 max-w-xs text-xs leading-5 text-white/55">
-              Agence de communication stratégique pour les marques, entreprises
-              et institutions en RDC.
+              Agence de communication stratégique pour les marques, institutions
+              et entrepreneurs en RDC. Basée à Kinshasa.
             </p>
             <div className="mt-5 flex gap-2">
               <a

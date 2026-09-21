@@ -9,23 +9,23 @@ import { SiteHeader } from "@/components/site-header";
 const values = [
   {
     icon: Target,
-    title: "Clarté stratégique",
-    text: "Nous transformons vos objectifs en décisions simples, concrètes et mesurables.",
+    title: "Vision à 360°",
+    text: "Nous prenons en charge l’ensemble de votre communication : stratégie, création, diffusion et mesure. Un seul partenaire pour tout gérer.",
   },
   {
     icon: HeartHandshake,
-    title: "Proximité humaine",
-    text: "Nous avançons à vos côtés avec écoute, respect et une compréhension réelle de votre contexte.",
+    title: "Approche sur mesure",
+    text: "Chaque client est unique. Nous refusons les solutions génériques et adaptons chaque stratégie à la réalité spécifique de votre organisation.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation utile",
-    text: "Nous créons des solutions modernes qui répondent aux besoins du terrain en RDC.",
+    title: "Créativité au service des objectifs",
+    text: "Nos idées ne sont pas faites pour impressionner mais pour produire des résultats concrets. La créativité est un outil, pas une fin en soi.",
   },
   {
     icon: Users,
-    title: "Impact collectif",
-    text: "Nous croyons aux projets qui renforcent les équipes, les communautés et l'économie locale.",
+    title: "Accompagnement de proximité",
+    text: "Basés à Kinshasa, nous connaissons les codes, les médias et les publics locaux. Nous sommes proches de vous à chaque étape du projet.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function AboutPage() {
               À propos de nous
             </h1>
             <p className="mt-5 max-w-md text-sm leading-6 text-white/75">
-              Une équipe congolaise engagée à faire grandir les idées, les entreprises et les talents.
+              Une agence de communication congolaise engagée à transformer les idées en marques fortes avec de l’impact.
             </p>
           </motion.div>
         </div>
@@ -82,18 +82,18 @@ export default function AboutPage() {
             Notre histoire
           </p>
           <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">
-            Une communication qui crée de la valeur en RDC.
+            Née de la conviction que les marques congolaises méritent mieux.
           </h2>
         </div>
         <div className="text-sm leading-7 text-[#38131b]/70">
           <p>
-            Tech+ est une agence de communication et de conseil basée en République démocratique du Congo. Nous accompagnons les marques, institutions et entrepreneurs qui veulent mieux raconter leur histoire et accélérer leur croissance.
+            Tech+ est une agence de communication stratégique et de conseil basée à Kinshasa, en République Démocratique du Congo. Nous accompagnons les marques, institutions et entrepreneurs qui veulent construire une communication forte, cohérente et adaptée à leur réalité.
           </p>
           <p className="mt-5">
-            Notre approche associe stratégie, créativité et connaissance du terrain pour construire des communications authentiques, visibles et utiles.
+            Notre approche associe stratégie, créativité et une connaissance profonde du terrain congolais. Nous créyons que chaque organisation, quelle que soit sa taille, mérite une communication professionnelle, authentique et efficace.
           </p>
           <div className="mt-7 grid gap-3 text-xs sm:grid-cols-2">
-            {["Stratégie de marque", "Communication digitale", "Contenus qui engagent", "Accompagnement local"].map((item) => (
+            {["Conseil en communication", "Branding & identité visuelle", "Production audiovisuelle", "Relations publiques", "Communication digitale", "Formation & coaching"].map((item) => (
               <span key={item} className="flex items-center gap-2">
                 <Check className="size-4 text-[#d7263d]" />
                 {item}
@@ -126,10 +126,10 @@ export default function AboutPage() {
             Notre mission
           </p>
           <h2 className="text-3xl font-semibold leading-tight sm:text-4xl">
-            Donner aux organisations congolaises une voix forte.
+            Donner aux marques congolaises une voix forte et un impact réel.
           </h2>
           <p className="mt-5 text-sm leading-7 text-[#38131b]/65">
-            Nous rendons la communication plus claire, plus humaine et plus proche des réalités africaines. Chaque projet est une occasion de connecter une vision à son public.
+            Nous rendons la communication plus claire, plus créative et plus proche des réalités africaines. De la stratégie à la production, chaque projet est une occasion de connecter une vision à son public cible avec authenticité et professionnalisme.
           </p>
           <Link
             href="/services"
@@ -145,7 +145,7 @@ export default function AboutPage() {
           <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-[#d7263d]">
             Ce qui nous guide
           </p>
-          <h2 className="text-3xl font-semibold sm:text-5xl">Nos valeurs au quotidien</h2>
+          <h2 className="text-3xl font-semibold sm:text-5xl">Nos valeurs fondatrices</h2>
         </div>
         <motion.div
           initial="hidden"
@@ -175,7 +175,8 @@ export default function AboutPage() {
       <section className="mx-6 mb-20 overflow-hidden rounded-2xl bg-[#571426] px-6 py-14 text-center text-white sm:px-12">
         <div className="mx-auto max-w-2xl">
           <p className="text-[10px] font-bold uppercase tracking-widest text-[#ffb3bd]">Parlons de votre projet</p>
-          <h2 className="mt-4 text-3xl font-semibold sm:text-5xl">Votre prochaine histoire commence ici.</h2>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-5xl">Votre prochaine histoire de marque commence ici.</h2>
+          <p className="mt-4 text-sm text-white/65">Contactez-nous pour un premier échange. Kinshasa, RDC — Techplus643@gmail.com</p>
           <Link
             href="/#contact"
             className="mt-7 inline-flex items-center gap-3 rounded-full bg-[#d7263d] px-5 py-3 text-[11px] font-bold text-white"

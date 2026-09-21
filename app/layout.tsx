@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tech+ RDC | Communication et stratégie",
-  description: "Tech+ RDC accompagne les marques et organisations congolaises.",
+  title: "Tech+ RDC | Agence de communication & conseil stratégique",
+  description: "Tech+ accompagne les marques, institutions et entrepreneurs congolais avec une communication stratégique, du branding, des relations publiques et de la production audiovisuelle. Basée à Kinshasa, RDC.",
   icons: {
     icon: "/tech-plus-logo.jpg",
   },
